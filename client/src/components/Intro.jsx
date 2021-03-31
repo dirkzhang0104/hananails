@@ -4,7 +4,7 @@ import Gallery from './Gallery.jsx';
 class Intro extends React.Component {
   render() {
     return (
-      <div>
+      <div className="gallaryContainer">
         <div className="titleContainer">
           <p className="gallerytitle">Some of our recent work</p>
         </div>
