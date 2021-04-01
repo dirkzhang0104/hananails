@@ -2,10 +2,12 @@
   "name": "hananails",
   "version": "1.0.0",
   "description": "Official website with reservation system for Hana Nails",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "react-dev": "webpack --mode development --watch"
+    "react-dev": "webpack --mode development --watch",
+    "build": "nodemon -w server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,12 @@
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-responsive-carousel": "^3.2.16",
